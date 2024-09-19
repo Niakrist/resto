@@ -35,6 +35,9 @@
   /* font-weight */
   --font-weight-standart: 400;
   --font-weight-bold: 600;
+  /*linear-gradient*/
+  --linear-gradient-start: #fedd2c;
+  --linear-gradient-end: #f9c201;
 }
 
 *,
@@ -106,7 +109,11 @@ a {
 /* HEADER */
 
 .header {
-  background: linear-gradient(90deg, #fedd2c 0%, #f9c201 100%);
+  background: linear-gradient(
+    90deg,
+    var(--linear-gradient-start) 0%,
+    var(--linear-gradient-end) 100%
+  );
 }
 
 .header__container {
@@ -134,20 +141,20 @@ a {
   color: var(--font-primary-color);
 }
 
-.feedback {
+.contact {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.feedback__phone {
+.contact__phone {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-accent);
   line-height: var(--line-height-standart);
   color: var(--font-primary-color);
 }
 
-.feedback__time {
+.contact__time {
   font-weight: var(--font-weight-standart);
   font-size: var(--font-size-small);
   line-height: var(--line-height-standart);
@@ -178,6 +185,8 @@ a {
 }
 
 .card__menu {
+  display: block;
+  object-fit: cover;
   height: 304px;
   border-radius: 16px;
   overflow: hidden;
@@ -187,10 +196,7 @@ a {
 .card__menu::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0) 50%,
