@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" type="module"></script>
     <title>Resto App</title>
   </head>
   <body>
     <header class="header">
+      <div class="header__delivery">
+        <p class="header__delivery-text">Бесплатная доставка от 1 000 ₽</p>
+        <button class="header__delivery-button">
+          <img src="./assets/icon/close.svg" alt="Кнопка Закрыть" />
+        </button>
+      </div>
       <div class="container header__container">
         <a class="header__logo" href="#"
           ><img
@@ -35,11 +42,21 @@
             </li>
           </ul>
         </nav>
-        <div class="header__contact contact">
-          <a class="contact__phone" href="tel:+01234567890"
-            >+0 (123) 456 78-90</a
-          >
-          <span class="contact__time">Прием заказов с 10:00 до 22:40</span>
+        <div class="header__right-block">
+          <div class="header__contact contact">
+            <a class="contact__phone" href="tel:+01234567890"
+              >+0 (123) 456 78-90</a
+            >
+            <span class="contact__time">Прием заказов с 10:00 до 22:40</span>
+          </div>
+          <div class="header__account account">
+            <button class="account__login">
+              <img src="./assets/icon/login.svg" alt="Вход в личный кабинет" />
+            </button>
+            <button class="account__basket">
+              <img src="./assets/icon/basket.svg" alt="Корзина пользователя" />
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -71,6 +88,263 @@
               <a href="#!" class="card__menu">
                 <img src="./assets/img/salad.jpg" alt="Салаты" />
                 <span class="card__link">Салаты</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="new-product">
+        <div class="container">
+          <h2 class="new-product__title">Новинки</h2>
+          <ul class="product">
+            <li>
+              <a class="product__item" href="#">
+                <div class="product__wrapper">
+                  <img
+                    class="product__img"
+                    src="./assets/img/new-1.jpg"
+                    alt="Китайский яичный суп" />
+                  <div class="product__badge">
+                    <span class="product__badge--vegan">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http:/www.w3.org/2000/svg">
+                        <path
+                          d="M18 3C18 6.55 15.3562 9.48438 11.9312 9.9375C11.7094 8.26875 10.975 6.7625 9.89062 5.58437C11.0875 3.44687 13.375 2 16 2H17C17.5531 2 18 2.44687 18 3ZM2 5C2 4.44687 2.44687 4 3 4H4C7.86562 4 11 7.13438 11 11V12V17C11 17.5531 10.5531 18 10 18C9.44687 18 9 17.5531 9 17V12C5.13438 12 2 8.86562 2 5Z"
+                          fill="white" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+                <div class="product__info">
+                  <h3 class="product__title">Китайский яичный суп</h3>
+                  <p class="product__desc">
+                    Традиционный китайский суп с яйцом и томатами черри
+                  </p>
+                </div>
+                <button class="product__button disabled">350 ₽</button>
+              </a>
+            </li>
+            <li>
+              <a class="product__item" href="#">
+                <div class="product__wrapper">
+                  <img
+                    class="product__img"
+                    src="./assets/img/new-2.jpg"
+                    alt="Китайский яичный суп" />
+                  <div class="product__badge">
+                    <span class="product__badge--vegan">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http:/www.w3.org/2000/svg">
+                        <path
+                          d="M18 3C18 6.55 15.3562 9.48438 11.9312 9.9375C11.7094 8.26875 10.975 6.7625 9.89062 5.58437C11.0875 3.44687 13.375 2 16 2H17C17.5531 2 18 2.44687 18 3ZM2 5C2 4.44687 2.44687 4 3 4H4C7.86562 4 11 7.13438 11 11V12V17C11 17.5531 10.5531 18 10 18C9.44687 18 9 17.5531 9 17V12C5.13438 12 2 8.86562 2 5Z"
+                          fill="white" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+                <div class="product__info">
+                  <h3 class="product__title">Паэлья</h3>
+                  <p class="product__desc">
+                    Традиционное испанское блюдо — рис, колбаски чоризо, куриное
+                    бедро, кальмар, кукуруза, горошек, специи
+                  </p>
+                </div>
+                <button class="product__button disabled">660 ₽</button>
+              </a>
+            </li>
+            <li>
+              <a class="product__item" href="#">
+                <div class="product__wrapper">
+                  <img
+                    class="product__img"
+                    src="./assets/img/new-3.jpg"
+                    alt="Китайский яичный суп" />
+                  <div class="product__badge"></div>
+                </div>
+                <div class="product__info">
+                  <h3 class="product__title">Биф Бургеньон</h3>
+                  <p class="product__desc">
+                    Блюдо французской кухни — тушёные кусочки говядины
+                    с картофелем и болгарским перцем
+                  </p>
+                </div>
+                <button class="product__button disabled">630 ₽</button>
+              </a>
+            </li>
+            <li>
+              <a class="product__item" href="#">
+                <div class="product__wrapper">
+                  <img
+                    class="product__img"
+                    src="./assets/img/new-4.jpg"
+                    alt="Китайский яичный суп" />
+                  <div class="product__badge">
+                    <span class="product__badge--vegan">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http:/www.w3.org/2000/svg">
+                        <path
+                          d="M18 3C18 6.55 15.3562 9.48438 11.9312 9.9375C11.7094 8.26875 10.975 6.7625 9.89062 5.58437C11.0875 3.44687 13.375 2 16 2H17C17.5531 2 18 2.44687 18 3ZM2 5C2 4.44687 2.44687 4 3 4H4C7.86562 4 11 7.13438 11 11V12V17C11 17.5531 10.5531 18 10 18C9.44687 18 9 17.5531 9 17V12C5.13438 12 2 8.86562 2 5Z"
+                          fill="white" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+                <div class="product__info">
+                  <h3 class="product__title">Битые огурцы</h3>
+                  <p class="product__desc">
+                    Салат из свежих битых огурцов с уйгурским соусом, кешью
+                    и кунжутом
+                  </p>
+                </div>
+                <button class="product__button disabled">320 ₽</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="popular">
+        <div class="container">
+          <h2 class="popular__title">Популярное</h2>
+          <ul class="product">
+            <li>
+              <a class="product__item" href="#">
+                <div class="product__wrapper">
+                  <img
+                    class="product__img"
+                    src="./assets/img/pop-1.jpg"
+                    alt="Пепперони" />
+                  <div class="product__badge">
+                    <span class="product__badge--vegan">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http:/www.w3.org/2000/svg">
+                        <path
+                          d="M18 3C18 6.55 15.3562 9.48438 11.9312 9.9375C11.7094 8.26875 10.975 6.7625 9.89062 5.58437C11.0875 3.44687 13.375 2 16 2H17C17.5531 2 18 2.44687 18 3ZM2 5C2 4.44687 2.44687 4 3 4H4C7.86562 4 11 7.13438 11 11V12V17C11 17.5531 10.5531 18 10 18C9.44687 18 9 17.5531 9 17V12C5.13438 12 2 8.86562 2 5Z"
+                          fill="white" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+                <div class="product__info">
+                  <h3 class="product__title">Пепперони</h3>
+                  <p class="product__desc">
+                    Просто и вкусно - томатная основа маринара, колбаски
+                    пепперони и сыр моцарелла
+                  </p>
+                </div>
+                <button class="product__button disabled">660 ₽</button>
+              </a>
+            </li>
+            <li>
+              <a class="product__item" href="#">
+                <div class="product__wrapper">
+                  <img
+                    class="product__img"
+                    src="./assets/img/pop-2.jpg"
+                    alt="Груша Горгонзола" />
+                  <div class="product__badge">
+                    <span class="product__badge--vegan">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http:/www.w3.org/2000/svg">
+                        <path
+                          d="M18 3C18 6.55 15.3562 9.48438 11.9312 9.9375C11.7094 8.26875 10.975 6.7625 9.89062 5.58437C11.0875 3.44687 13.375 2 16 2H17C17.5531 2 18 2.44687 18 3ZM2 5C2 4.44687 2.44687 4 3 4H4C7.86562 4 11 7.13438 11 11V12V17C11 17.5531 10.5531 18 10 18C9.44687 18 9 17.5531 9 17V12C5.13438 12 2 8.86562 2 5Z"
+                          fill="white" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+                <div class="product__info">
+                  <h3 class="product__title">Груша Горгонзола</h3>
+                  <p class="product__desc">
+                    Нежная пицца на основе сливочного соуса с сыром горгондзола,
+                    грушей, медом и кедровыми орехами
+                  </p>
+                </div>
+                <button class="product__button disabled">780 ₽</button>
+              </a>
+            </li>
+            <li>
+              <a class="product__item" href="#">
+                <div class="product__wrapper">
+                  <img
+                    class="product__img"
+                    src="./assets/img/soup.jpg"
+                    alt="Фо Бо" />
+                  <div class="product__badge"></div>
+                </div>
+                <div class="product__info">
+                  <h3 class="product__title">Фо Бо</h3>
+                  <p class="product__desc">
+                    Вьетнамский суп с рисовой лапшой, в котором используется
+                    говядина, свежая зелень и ростки сои. Подают с добавками,
+                    такими как мята, долька лайма, острый соус шрирача,
+                    азиатский уксус и лаоганма
+                  </p>
+                </div>
+                <button class="product__button disabled">490 ₽</button>
+              </a>
+            </li>
+            <li>
+              <a class="product__item" href="#">
+                <div class="product__wrapper">
+                  <img
+                    class="product__img"
+                    src="./assets/img/pop-4.jpg"
+                    alt="Том Ям с морепродуктами" />
+                  <div class="product__badge">
+                    <span class="product__badge--hot">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M12.3337 10.2222V7.41831L10.6852 6.6614C8.8576 8.83587 8.17445 14.4999 3.74989 14.4999C3.28574 14.4999 2.8406 14.6842 2.5124 15.0124C2.1842 15.3406 1.99982 15.7858 1.99982 16.2499C1.99982 16.7141 2.1842 17.1592 2.5124 17.4874C2.8406 17.8156 3.28574 18 3.74989 18C10.3952 18 15.3332 14.1602 16.8498 11.4266L15.6919 10.2222H12.3337ZM16.4304 6.21045C17.4355 4.34037 16.9123 2.82687 16.3323 2.09309C16.3102 2.06565 16.2825 2.04319 16.2511 2.0272C16.2197 2.01121 16.1852 2.00205 16.15 2.00031C16.1148 1.99856 16.0796 2.00429 16.0468 2.0171C16.0139 2.02991 15.9842 2.04953 15.9595 2.07465L15.2438 2.79343C15.2027 2.83518 15.1775 2.88993 15.1724 2.94828C15.1673 3.00663 15.1827 3.06492 15.216 3.11313C15.4304 3.4369 15.7488 4.21005 15.1722 5.37323C14.6089 5.12696 14.0007 4.99971 13.3859 4.99946C12.5109 4.99946 11.6983 5.26635 11.0002 5.70543L13.3337 6.77703V9.22214H16.1179L17.8267 10.9997C17.9286 10.6053 18.0005 10.1987 18.0005 9.77122C18.0011 9.1011 17.8618 8.43823 17.5914 7.82506C17.321 7.2119 16.9256 6.66196 16.4304 6.21045Z"
+                          fill="white" />
+                      </svg>
+                    </span>
+                    <span class="product__badge--seafood">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.32832 5.51176C7.48686 5.65019 5.70998 6.2505 4.16187 7.25723C4.3643 6.45056 4.79304 5.71854 5.3976 5.14739C6.00215 4.57624 6.75733 4.18975 7.57419 4.03344C7.79034 3.98996 8.01352 3.9958 8.22711 4.05054C8.44069 4.10527 8.63917 4.20749 8.80776 4.34958C8.97636 4.49167 9.11072 4.66996 9.20085 4.87118C9.29098 5.0724 9.33455 5.29136 9.32832 5.51176ZM17.7585 5.49644C17.5165 5.16536 17.2096 4.88709 16.8565 4.67862C16.5033 4.47015 16.1114 4.33585 15.7046 4.28394C15.6527 3.87715 15.5184 3.48522 15.3099 3.13208C15.1014 2.77894 14.8232 2.472 14.4921 2.23001C14.3223 2.10224 14.1203 2.02426 13.9087 2.00481C13.6971 1.98535 13.4842 2.02519 13.294 2.11987C13.1037 2.21454 12.9436 2.36031 12.8315 2.54084C12.7194 2.72138 12.6598 2.92955 12.6594 3.14205V6.66297C7.65147 6.66297 4.7941 7.62031 3.30779 10.1233C4.885 10.5353 6.32378 11.3605 7.47576 12.5139C8.62773 13.6673 9.45122 15.107 9.86129 16.6847C12.3669 15.1991 13.3256 12.3411 13.3256 7.32918L16.8465 7.32918C17.059 7.32871 17.2672 7.2691 17.4477 7.15702C17.6282 7.04493 17.774 6.8848 17.8687 6.69455C17.9633 6.50431 18.0032 6.29146 17.9837 6.07985C17.9643 5.86824 17.8863 5.66623 17.7585 5.49644ZM14.7912 10.6602H14.4748C14.3743 11.5629 14.193 12.4548 13.9332 13.3251H14.4755C16.1323 13.3764 16.6646 10.7428 14.7912 10.6602ZM8.62947 17.263C7.03057 17.7214 4.27446 18.6907 2.78015 17.2084C2.5118 16.9408 2.30386 16.6189 2.17033 16.2643C2.0368 15.9097 1.98077 15.5306 2.00602 15.1525C2.06781 13.8593 2.31022 12.5811 2.72619 11.3551C4.16844 11.6802 5.48879 12.4079 6.53379 13.4538C7.57879 14.4996 8.3055 15.8205 8.62947 17.263ZM5.33107 15.3237C5.33107 15.147 5.26088 14.9775 5.13594 14.8526C5.011 14.7277 4.84155 14.6575 4.66486 14.6575C4.48817 14.6575 4.31871 14.7277 4.19378 14.8526C4.06884 14.9775 3.99865 15.147 3.99865 15.3237C3.99865 15.5004 4.06884 15.6698 4.19378 15.7948C4.31871 15.9197 4.48817 15.9899 4.66486 15.9899C4.84155 15.9899 5.011 15.9197 5.13594 15.7948C5.26088 15.6698 5.33107 15.5004 5.33107 15.3237Z"
+                          fill="white" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+                <div class="product__info">
+                  <h3 class="product__title">Том Ям с морепродуктами</h3>
+                  <p class="product__desc">
+                    Просто и вкусно - томатная основа маринара, колбаски
+                    пепперони и сыр моцарелла
+                  </p>
+                </div>
+                <button class="product__button disabled">590 ₽</button>
               </a>
             </li>
           </ul>
