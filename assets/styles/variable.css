@@ -3,11 +3,6 @@
   --font-primary-color: #555;
   --font-accent-color: #1c1c1c;
   --font-white-color: #fff;
-  --font-grey-color: #727272;
-  --button-light-color: #f4f4f4;
-  --badge-green-color: #1daa0f;
-  --badge-orange-color: #fc7d04;
-  --badge-blue-color: #0094e4;
 
   /*font-size*/
   --font-size-small: 12px;
@@ -24,7 +19,6 @@
   /* font-weight */
   --font-weight-standart: 400;
   --font-weight-bold: 600;
-
   /*linear-gradient*/
   --linear-gradient-start: #fedd2c;
   --linear-gradient-end: #f9c201;

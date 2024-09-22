@@ -44,9 +44,6 @@ a {
   font-weight: inherit;
   line-height: inherit;
 }
-button {
-  font-family: inherit;
-}
 
 .container {
   max-width: 1312px;
