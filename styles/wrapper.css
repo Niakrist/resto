@@ -1,0 +1,11 @@
+.wrapper {
+  padding: 32px 0;
+}
+
+.wrapper__title {
+  margin-bottom: 32px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-small);
+  color: var(--font-accent-color);
+}

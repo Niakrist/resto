@@ -1,6 +1,10 @@
-@import "./assets/styles/font.css";
-@import "./assets/styles/default.css";
-@import "./assets/styles/variable.css";
+@import "./styles/font.css";
+@import "./styles/default.css";
+@import "./styles/variable.css";
 
-@import "./assets/styles/header.css";
-@import "./assets/styles/menu.css";
+@import "./styles/header.css";
+@import "./styles/menu.css";
+@import "./styles//wrapper.css";
+@import "./styles/product.css";
+@import "./styles/for-visitors.css";
+@import "./styles/event.css";
