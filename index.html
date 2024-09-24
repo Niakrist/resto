@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon" />
     <script src="./index.js" type="module"></script>
     <title>Resto App</title>
   </head>
@@ -138,7 +137,7 @@
                 <div class="product__info">
                   <h3 class="product__title">Паэлья</h3>
                   <p class="product__desc">
-                    Традиционное испанское блюдо &mdash; рис, колбаски чоризо,
+                    Традиционное испанское блюдо &ndash; рис, колбаски чоризо,
                     куриное бедро, кальмар, кукуруза, горошек, специи
                   </p>
                 </div>
@@ -159,7 +158,7 @@
                 <div class="product__info">
                   <h3 class="product__title">Биф Бургеньон</h3>
                   <p class="product__desc">
-                    Блюдо французской кухни &mdash; тушёные кусочки говядины
+                    Блюдо французской кухни &ndash; тушёные кусочки говядины
                     с картофелем и болгарским перцем
                   </p>
                 </div>
@@ -196,7 +195,7 @@
           </ul>
         </div>
       </section>
-      <section class="popular wrapper">
+      <section class="popular">
         <div class="container">
           <h2 class="popular__title wrapper__title">Популярное</h2>
           <ul class="product">
@@ -216,7 +215,7 @@
                 <div class="product__info">
                   <h3 class="product__title">Пепперони</h3>
                   <p class="product__desc">
-                    Просто и вкусно &mdash; томатная основа маринара, колбаски
+                    Просто и вкусно &ndash; томатная основа маринара, колбаски
                     пепперони и сыр моцарелла
                   </p>
                 </div>
@@ -292,7 +291,7 @@
                 <div class="product__info">
                   <h3 class="product__title">Том Ям с морепродуктами</h3>
                   <p class="product__desc">
-                    Просто и вкусно &mdash; томатная основа маринара, колбаски
+                    Просто и вкусно &ndash; томатная основа маринара, колбаски
                     пепперони и сыр моцарелла
                   </p>
                 </div>
@@ -300,124 +299,6 @@
               <button type="button" class="product__button disabled">
                 590 ₽
               </button>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="stocks for-visitors wrapper">
-        <div class="container">
-          <h2 class="stocks__title wrapper__title">Акции</h2>
-          <ul class="for-visitors__list">
-            <li class="for-visitors__item">
-              <a class="for-visitors__link" href="#!">
-                <ul class="for-visitors__info-left-list">
-                  <li class="for-visitors__info-item">Скидка 10%</li>
-                </ul>
-                <ul class="for-visitors__info-right-list"></ul>
-                <h3 class="for-visitors__title">
-                  Статус «Platina» привилегированным клиентам
-                </h3>
-                <img
-                  class="for-visitors__img"
-                  src="./images/stocks-1.webp"
-                  alt="Статус «Platina» привилегированным клиентам" />
-              </a>
-            </li>
-            <li class="for-visitors__item">
-              <a class="for-visitors__link" href="#!">
-                <ul class="for-visitors__info-left-list">
-                  <li class="for-visitors__info-item">Скидка 5%</li>
-                </ul>
-                <ul class="for-visitors__info-right-list"></ul>
-                <h3 class="for-visitors__title">
-                  Скидка на все покупки при регистрации
-                </h3>
-                <img
-                  class="for-visitors__img"
-                  src="./images/stocks-2.webp"
-                  alt="Скидка на все покупки при регистрации" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="event for-visitors wrapper">
-        <div class="container">
-          <h2 class="event__title wrapper__title">События</h2>
-          <ul class="for-visitors__list">
-            <li class="for-visitors__item">
-              <a class="for-visitors__link" href="#!">
-                <ul class="for-visitors__info-left-list">
-                  <li class="for-visitors__info-item">27 января</li>
-                  <li class="for-visitors__info-item">В 21:00</li>
-                </ul>
-                <ul class="for-visitors__info-right-list">
-                  <li class="for-visitors__status">Скоро</li>
-                </ul>
-                <h3 class="for-visitors__title">Первый в этом году Stand-Up</h3>
-                <img
-                  class="for-visitors__img"
-                  src="./images/event-1.webp"
-                  alt="Первый в этом году Stand-Up" />
-              </a>
-            </li>
-            <li class="for-visitors__item">
-              <a class="for-visitors__link" href="#!">
-                <ul class="for-visitors__info-left-list">
-                  <li class="for-visitors__info-item">21 января</li>
-                  <li class="for-visitors__info-item">Скидка 20%</li>
-                </ul>
-                <ul class="for-visitors__info-right-list">
-                  <li class="for-visitors__status for-visitors__status--old">
-                    Завершено
-                  </li>
-                </ul>
-                <h3 class="for-visitors__title">День рождения в «Гастроцех»</h3>
-                <img
-                  class="for-visitors__img"
-                  src="./images/event-2.webp"
-                  alt="День рождения в «Гастроцех»" />
-              </a>
-            </li>
-          </ul>
-          <button type="button" class="event__button">Все события</button>
-        </div>
-      </section>
-      <section class="about-us for-visitors wrapper">
-        <div class="container">
-          <h2 class="about-us__title wrapper__title">Наши заведения</h2>
-          <ul class="for-visitors__list">
-            <li class="for-visitors__item">
-              <a class="for-visitors__link" href="#!">
-                <ul class="for-visitors__info-left-list">
-                  <li class="for-visitors__info-item">Открыт еще 1 ч 20 мин</li>
-                  <li class="for-visitors__info-item">с 10:00 до 23:00</li>
-                </ul>
-                <ul class="for-visitors__info-right-list">
-                  <li class="for-visitors__status">Открыт</li>
-                </ul>
-                <h3 class="for-visitors__title">Фудкорт — Кафе «Гастроцех»</h3>
-                <img
-                  class="for-visitors__img"
-                  src="./images/about-us-1.webp"
-                  alt="Фудкорт — Кафе «Гастроцех»" />
-              </a>
-            </li>
-            <li class="for-visitors__item">
-              <a class="for-visitors__link" href="#!">
-                <ul class="for-visitors__info-left-list">
-                  <li class="for-visitors__info-item">Открыт еще 1 ч 20 мин</li>
-                  <li class="for-visitors__info-item">с 10:00 до 23:00</li>
-                </ul>
-                <ul class="for-visitors__info-right-list">
-                  <li class="for-visitors__status">Открыт</li>
-                </ul>
-                <h3 class="for-visitors__title">«Гастроцех» Пицца</h3>
-                <img
-                  class="for-visitors__img"
-                  src="./images/about-us-2.webp"
-                  alt="" />
-              </a>
             </li>
           </ul>
         </div>
