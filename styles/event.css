@@ -11,6 +11,10 @@
   border: 2px solid var(--font-accent-color);
   border-radius: 16px;
   padding: 16px 24px;
-  cursor: pointer;
+
   background-color: transparent;
+}
+
+.event__button:disabled {
+  cursor: not-allowed;
 }

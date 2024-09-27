@@ -11,15 +11,19 @@
 
   /*font-size*/
   --font-size-small: 12px;
+  --font-size-info: 14px;
   --font-size-standart: 16px;
   --font-size-accent: 18px;
   --font-size-menu: 24px;
+  --font-size-visitors-title: 32px;
   --font-size-title: 40px;
 
   /* line-height */
   --line-height-standart: 1.33333;
   --line-height-small: 1.2;
+  --line-height-visitors-title: 1.25;
   --line-height-big: 1.5;
+  --line-height-info: 1.42857;
 
   /* font-weight */
   --font-weight-standart: 400;

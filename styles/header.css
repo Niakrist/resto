@@ -45,6 +45,10 @@
   outline: 2px solid var(--font-primary-color);
 }
 
+.header__logo:focus-visible {
+  border-radius: 4px;
+}
+
 .header__img {
   display: block;
 }
@@ -69,6 +73,10 @@
   color: var(--font-primary-color);
 }
 
+.main-menu__link:focus-visible {
+  border-radius: 4px;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -81,6 +89,10 @@
   line-height: var(--line-height-standart);
   color: var(--font-primary-color);
   letter-spacing: 0.1px;
+}
+
+.contact__phone:focus-visible {
+  border-radius: 4px;
 }
 
 .contact__time {
@@ -96,7 +108,6 @@
   align-items: center;
 }
 
-.account__btn,
 .account__btn {
   max-height: 48px;
   max-width: 56px;

@@ -5,12 +5,12 @@
 }
 
 .for-visitors__link {
+  display: block;
   max-width: 640px;
   height: 360px;
   border-radius: 16px;
   overflow: hidden;
   position: relative;
-  z-index: 100;
 }
 
 .for-visitors__link::before {
@@ -79,6 +79,8 @@
   color: var(--font-white-color);
 }
 .for-visitors__img {
-  /* object-fit: cover; */
-  object-position: top;
+  overflow: hidden;
+  width: 640px;
+  height: 360px;
+  object-fit: cover;
 }

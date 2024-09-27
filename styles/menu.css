@@ -4,7 +4,7 @@
 
 .menu__title {
   font-weight: var(--font-weight-bold);
-  font-size: 40px;
+  font-size: var(--font-size-title);
   line-height: var(--line-height-small);
   color: var(--font-accent-color);
 }
@@ -26,6 +26,10 @@
   border-radius: 16px;
   overflow: hidden;
   position: relative;
+}
+
+.card__menu:focus-visible {
+  border-radius: 16px;
 }
 
 .card__menu::before {

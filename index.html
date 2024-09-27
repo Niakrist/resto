@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon" />
     <script src="./index.js" type="module"></script>
     <title>Resto App</title>
   </head>
@@ -17,7 +18,7 @@
         </button>
       </div>
       <div class="container header__container">
-        <a class="header__logo" href="#"
+        <a class="header__logo" href="/"
           ><img
             class="header__img"
             src="./icon/logo.svg"
@@ -26,19 +27,19 @@
         <nav class="header__main-menu main-menu">
           <ul class="main-menu__list">
             <li class="main-menu__item">
-              <a href="#!" class="main-menu__link">Меню</a>
+              <a href="/" class="main-menu__link">Меню</a>
             </li>
             <li class="main-menu__item">
-              <a href="#!" class="main-menu__link">Акции</a>
+              <a href="/" class="main-menu__link">Акции</a>
             </li>
             <li class="main-menu__item">
-              <a href="#!" class="main-menu__link">О нас</a>
+              <a href="/" class="main-menu__link">О нас</a>
             </li>
             <li class="main-menu__item">
-              <a href="#!" class="main-menu__link">События</a>
+              <a href="/" class="main-menu__link">События</a>
             </li>
             <li class="main-menu__item">
-              <a href="#!" class="main-menu__link">Зоны доставки</a>
+              <a href="/" class="main-menu__link">Зоны доставки</a>
             </li>
           </ul>
         </nav>
@@ -47,7 +48,11 @@
             <a class="contact__phone" href="tel:+01234567890"
               >+0&nbsp;(123)&nbsp;456&nbsp;78&ndash;90</a
             >
-            <span class="contact__time">Прием заказов с 10:00 до 22:40</span>
+            <span class="contact__time">
+              Прием заказов с
+              <time datetime="10:00">10:00</time> до
+              <time datetime="22:00">22:40</time>
+            </span>
           </div>
           <div class="header__account account">
             <button type="button" class="account__btn account__btn--login">
@@ -67,25 +72,25 @@
           <h2 class="menu__title menu__title--bottom">Меню</h2>
           <ul class="menu__list">
             <li class="menu__card card">
-              <a href="#!" class="card__menu">
+              <a href="/" class="card__menu">
                 <img src="./images/pizza.webp" alt="Пиццы" />
                 <span class="card__link">Пицца</span>
               </a>
             </li>
             <li class="menu__card card">
-              <a href="#!" class="card__menu">
+              <a href="/" class="card__menu">
                 <img src="./images/soup.webp" alt="Супы" />
                 <span class="card__link">Супы</span>
               </a>
             </li>
             <li class="menu__card card">
-              <a href="#!" class="card__menu">
+              <a href="/" class="card__menu">
                 <img src="./images/hot.webp" alt="Горячие блюда" />
                 <span class="card__link">Горячие блюда</span>
               </a>
             </li>
             <li class="menu__card card">
-              <a href="#!" class="card__menu">
+              <a href="/" class="card__menu">
                 <img src="./images/salad.webp" alt="Салаты" />
                 <span class="card__link">Салаты</span>
               </a>
@@ -96,16 +101,16 @@
       <section class="new-product wrapper">
         <div class="container">
           <h2 class="new-product__title wrapper__title">Новинки</h2>
-          <ul class="product">
+          <ul class="products">
             <li>
-              <a class="product__item" href="#">
+              <a class="product__item" href="/">
                 <div class="product__wrapper">
                   <img
                     class="product__img"
                     src="./images/kitayskiy-yaichnyy-sup.webp"
                     alt="Китайский яичный суп" />
                   <ul class="product__badge">
-                    <li class="product__badge-vegan">
+                    <li class="product__badge-vegan product__badge--vegan">
                       <img src="./icon/vegan.svg" alt="Вегетарианская еда" />
                     </li>
                   </ul>
@@ -117,19 +122,19 @@
                   </p>
                 </div>
               </a>
-              <button type="button" class="product__button disabled">
+              <button type="button" class="product__button" disabled>
                 350 ₽
               </button>
             </li>
             <li>
-              <a class="product__item" href="#">
+              <a class="product__item" href="/">
                 <div class="product__wrapper">
                   <img
                     class="product__img"
                     src="./images/paelya.webp"
                     alt="Паэлья" />
                   <ul class="product__badge">
-                    <li class="product__badge-vegan">
+                    <li class="product__badge-vegan product__badge--vegan">
                       <img src="./icon/vegan.svg" alt="Вегетарианская еда" />
                     </li>
                   </ul>
@@ -137,17 +142,17 @@
                 <div class="product__info">
                   <h3 class="product__title">Паэлья</h3>
                   <p class="product__desc">
-                    Традиционное испанское блюдо &ndash; рис, колбаски чоризо,
+                    Традиционное испанское блюдо &mdash; рис, колбаски чоризо,
                     куриное бедро, кальмар, кукуруза, горошек, специи
                   </p>
                 </div>
               </a>
-              <button type="button" class="product__button disabled">
+              <button type="button" class="product__button" disabled>
                 660 ₽
               </button>
             </li>
             <li>
-              <a class="product__item" href="#">
+              <a class="product__item" href="/">
                 <div class="product__wrapper">
                   <img
                     class="product__img"
@@ -158,24 +163,24 @@
                 <div class="product__info">
                   <h3 class="product__title">Биф Бургеньон</h3>
                   <p class="product__desc">
-                    Блюдо французской кухни &ndash; тушёные кусочки говядины
+                    Блюдо французской кухни &mdash; тушёные кусочки говядины
                     с картофелем и болгарским перцем
                   </p>
                 </div>
               </a>
-              <button type="button" class="product__button disabled">
+              <button type="button" class="product__button" disabled>
                 630 ₽
               </button>
             </li>
             <li>
-              <a class="product__item" href="#">
+              <a class="product__item" href="/">
                 <div class="product__wrapper">
                   <img
                     class="product__img"
                     src="./images/bitye-ogurcy.webp"
                     alt="Битые огурцы" />
                   <ul class="product__badge">
-                    <li class="product__badge-vegan">
+                    <li class="product__badge-vegan product__badge--vegan">
                       <img src="./icon/vegan.svg" alt="Вегетарианская еда" />
                     </li>
                   </ul>
@@ -188,26 +193,26 @@
                   </p>
                 </div>
               </a>
-              <button type="button" class="product__button disabled">
+              <button type="button" class="product__button" disabled>
                 320 ₽
               </button>
             </li>
           </ul>
         </div>
       </section>
-      <section class="popular">
+      <section class="popular wrapper">
         <div class="container">
           <h2 class="popular__title wrapper__title">Популярное</h2>
-          <ul class="product">
+          <ul class="products">
             <li>
-              <a class="product__item" href="#">
+              <a class="product__item" href="/">
                 <div class="product__wrapper">
                   <img
                     class="product__img"
                     src="./images/pepperoni.webp"
                     alt="Пепперони" />
                   <ul class="product__badge">
-                    <li class="product__badge-vegan">
+                    <li class="product__badge-vegan product__badge--vegan">
                       <img src="./icon/vegan.svg" alt="Вегетарианская еда" />
                     </li>
                   </ul>
@@ -215,24 +220,24 @@
                 <div class="product__info">
                   <h3 class="product__title">Пепперони</h3>
                   <p class="product__desc">
-                    Просто и вкусно &ndash; томатная основа маринара, колбаски
+                    Просто и вкусно &mdash; томатная основа маринара, колбаски
                     пепперони и сыр моцарелла
                   </p>
                 </div>
               </a>
-              <button type="button" class="product__button disabled">
+              <button type="button" class="product__button" disabled>
                 660 ₽
               </button>
             </li>
             <li>
-              <a class="product__item" href="#">
+              <a class="product__item" href="/">
                 <div class="product__wrapper">
                   <img
                     class="product__img"
                     src="./images/grusha-gorgonzola.webp"
                     alt="Груша Горгонзола" />
                   <ul class="product__badge">
-                    <li class="product__badge-vegan">
+                    <li class="product__badge-vegan product__badge--vegan">
                       <img src="./icon/vegan.svg" alt="Вегетарианская еда" />
                     </li>
                   </ul>
@@ -245,12 +250,12 @@
                   </p>
                 </div>
               </a>
-              <button type="button" class="product__button disabled">
+              <button type="button" class="product__button" disabled>
                 780 ₽
               </button>
             </li>
             <li>
-              <a class="product__item" href="#">
+              <a class="product__item" href="/">
                 <div class="product__wrapper">
                   <img
                     class="product__img"
@@ -261,14 +266,14 @@
                 <div class="product__info">
                   <h3 class="product__title">Фо Бо</h3>
                   <p class="product__desc">
-                    Вьетнамский суп с рисовой лапшой, в котором используется
-                    говядина, свежая зелень и ростки сои. Подают с добавками,
-                    такими как мята, долька лайма, острый соус шрирача,
-                    азиатский уксус и лаоганма
+                    Вьетнамский суп с рисовой лапшой, в&#160;котором
+                    используется говядина, свежая зелень и ростки сои. Подают с
+                    добавками, такими как мята, долька лайма, острый соус
+                    шрирача, азиатский уксус и лаоганма
                   </p>
                 </div>
               </a>
-              <button type="button" class="product__button disabled">
+              <button type="button" class="product__button" disabled>
                 490 ₽
               </button>
             </li>
@@ -280,10 +285,10 @@
                     src="./images/tom-yam-s-moreproduktami.webp"
                     alt="Том Ям с морепродуктами" />
                   <ul class="product__badge">
-                    <li class="product__badge-hot">
+                    <li class="product__badge-hot product__badge--hot">
                       <img src="./icon/hot.svg" alt="Острая пища" />
                     </li>
-                    <li class="product__badge-seafood">
+                    <li class="product__badge-seafood product__badge--seafood">
                       <img src="./icon/seafood.svg" alt="Морепродукты" />
                     </li>
                   </ul>
@@ -291,14 +296,151 @@
                 <div class="product__info">
                   <h3 class="product__title">Том Ям с морепродуктами</h3>
                   <p class="product__desc">
-                    Просто и вкусно &ndash; томатная основа маринара, колбаски
+                    Просто и вкусно &mdash; томатная основа маринара, колбаски
                     пепперони и сыр моцарелла
                   </p>
                 </div>
               </a>
-              <button type="button" class="product__button disabled">
+              <button type="button" class="product__button" disabled>
                 590 ₽
               </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="stocks for-visitors wrapper">
+        <div class="container">
+          <h2 class="wrapper__title">Акции</h2>
+          <ul class="for-visitors__list">
+            <li class="for-visitors__item">
+              <a class="for-visitors__link" href="/">
+                <ul class="for-visitors__info-left-list">
+                  <li class="for-visitors__info-item">Скидка 10%</li>
+                </ul>
+                <ul class="for-visitors__info-right-list"></ul>
+                <h3 class="for-visitors__title">
+                  Статус «Platina» привилегированным клиентам
+                </h3>
+                <img
+                  class="for-visitors__img"
+                  src="./images/stocks-1.webp"
+                  alt="Статус «Platina» привилегированным клиентам" />
+              </a>
+            </li>
+            <li class="for-visitors__item">
+              <a class="for-visitors__link" href="/">
+                <ul class="for-visitors__info-left-list">
+                  <li class="for-visitors__info-item">Скидка 5%</li>
+                </ul>
+                <ul class="for-visitors__info-right-list"></ul>
+                <h3 class="for-visitors__title">
+                  Скидка на все покупки при регистрации
+                </h3>
+                <img
+                  class="for-visitors__img"
+                  src="./images/stocks-2.webp"
+                  alt="Скидка на все покупки при регистрации" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="event for-visitors wrapper">
+        <div class="container">
+          <h2 class="wrapper__title">События</h2>
+          <ul class="for-visitors__list">
+            <li class="for-visitors__item">
+              <a class="for-visitors__link" href="/">
+                <ul class="for-visitors__info-left-list">
+                  <li class="for-visitors__info-item">
+                    <time datetime="2024-01-27">27 января</time>
+                  </li>
+                  <li class="for-visitors__info-item">
+                    В <time datetime="21:00">21:00</time>
+                  </li>
+                </ul>
+                <ul class="for-visitors__info-right-list">
+                  <li class="for-visitors__status">Скоро</li>
+                </ul>
+                <h3 class="for-visitors__title">Первый в этом году Stand-Up</h3>
+                <img
+                  class="for-visitors__img"
+                  src="./images/event-1.webp"
+                  alt="Первый в этом году Stand-Up" />
+              </a>
+            </li>
+            <li class="for-visitors__item">
+              <a class="for-visitors__link" href="/">
+                <ul class="for-visitors__info-left-list">
+                  <li class="for-visitors__info-item">
+                    <time datetime="2024-01-21">21 января</time>
+                  </li>
+                  <li class="for-visitors__info-item">Скидка 20%</li>
+                </ul>
+                <ul class="for-visitors__info-right-list">
+                  <li class="for-visitors__status for-visitors__status--old">
+                    Завершено
+                  </li>
+                </ul>
+                <h3 class="for-visitors__title">День рождения в «Гастроцех»</h3>
+                <img
+                  class="for-visitors__img"
+                  src="./images/event-2.webp"
+                  alt="День рождения в «Гастроцех»" />
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="event__button" disabled>
+            Все события
+          </button>
+        </div>
+      </section>
+      <section class="about-us for-visitors wrapper">
+        <div class="container">
+          <h2 class="wrapper__title">Наши заведения</h2>
+          <ul class="for-visitors__list">
+            <li class="for-visitors__item">
+              <a class="for-visitors__link" href="/">
+                <ul class="for-visitors__info-left-list">
+                  <li class="for-visitors__info-item">
+                    Открыт еще
+                    <time datetime="1h 20m">1 ч 20 мин</time>
+                  </li>
+                  <li class="for-visitors__info-item">
+                    с <time datetime="10:00">10:00</time> до
+                    <time datetime="23:00">23:00</time>
+                  </li>
+                </ul>
+                <ul class="for-visitors__info-right-list">
+                  <li class="for-visitors__status">Открыт</li>
+                </ul>
+                <h3 class="for-visitors__title">Фудкорт — Кафе «Гастроцех»</h3>
+                <img
+                  class="for-visitors__img"
+                  src="./images/about-us-1.webp"
+                  alt="Фудкорт — Кафе «Гастроцех»" />
+              </a>
+            </li>
+            <li class="for-visitors__item">
+              <a class="for-visitors__link" href="/">
+                <ul class="for-visitors__info-left-list">
+                  <li class="for-visitors__info-item">
+                    Открыт еще <time datetime="1h 20m">1 ч 20 мин</time>
+                  </li>
+                  <li class="for-visitors__info-item">
+                    с <time datetime="10:00">10:00</time> до
+                    <time datetime="23:00">23:00</time>
+                  </li>
+                </ul>
+                <ul class="for-visitors__info-right-list">
+                  <li class="for-visitors__status">Открыт</li>
+                </ul>
+                <h3 class="for-visitors__title">«Гастроцех» Пицца</h3>
+                <img
+                  class="for-visitors__img"
+                  src="./images/about-us-2.webp"
+                  alt="" />
+              </a>
             </li>
           </ul>
         </div>
