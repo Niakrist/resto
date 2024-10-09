@@ -3,6 +3,9 @@
 @import "./styles/variable.css";
 
 @import "./styles/header.css";
+@import "./styles/main-menu.css";
+@import "./styles/contact.css";
+@import "./styles/account.css";
 @import "./styles/menu.css";
 @import "./styles//wrapper.css";
 @import "./styles/products.css";
@@ -10,3 +13,6 @@
 @import "./styles/for-visitors.css";
 @import "./styles/event.css";
 @import "./styles/about-us.css";
+@import "./styles/footer.css";
+@import "./styles/copyright.css";
+@import "./styles/preax.css";

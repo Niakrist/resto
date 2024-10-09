@@ -1,0 +1,35 @@
+.main-menu__list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.main-menu__link {
+  display: inline-block;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-standart);
+  line-height: var(--line-height-big);
+  color: var(--font-primary-color);
+  transition: color 0.2s;
+}
+
+.main-menu__link:hover {
+  color: var(--font-accent-color);
+}
+
+.main-menu__link:focus-visible {
+  border-radius: 4px;
+}
+
+.main-menu__list--footer {
+  column-gap: 32px;
+}
+
+.main-menu__link--footer {
+  color: var(--button-light-color);
+  transition: color 0.2s;
+}
+
+.main-menu__link--footer:hover {
+  color: var(--font-footer-color);
+}

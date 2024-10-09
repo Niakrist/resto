@@ -1,0 +1,38 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact__phone {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-accent);
+  line-height: var(--line-height-standart);
+  color: var(--font-primary-color);
+  letter-spacing: 0.1px;
+}
+
+.contact__phone:focus-visible {
+  border-radius: 4px;
+}
+
+.contact__time {
+  font-weight: var(--font-weight-standart);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-standart);
+  color: var(--font-primary-color);
+}
+
+.contact__phone--footer {
+  margin-bottom: 4px;
+  color: var(--button-light-color);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-menu);
+  line-height: var(--line-height-standart);
+}
+.contact__time--footer {
+  color: var(--font-footer-color);
+  font-weight: var(--font-weight-standart);
+  font-size: var(--font-size-info);
+  line-height: var(--line-height-info);
+}

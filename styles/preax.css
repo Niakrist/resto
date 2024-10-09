@@ -1,0 +1,27 @@
+.preax {
+  padding: 32px 0;
+  text-align: center;
+  font-weight: var(--font-weight-standart);
+  font-size: var(--font-size-info);
+  line-height: var(--line-height-info);
+  color: var(--font-footer-color);
+  border-top: 1px solid var(--footer-border-color);
+}
+
+.preax__link {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: var(--font-weight-standart);
+  font-size: var(--font-size-info);
+  line-height: var(--line-height-info);
+  color: var(--font-footer-color);
+  transition: color 0.2s;
+}
+
+.preax__link:hover {
+  color: var(--font-white-color);
+}
+
+.preax__link:focus-visible {
+  border-radius: 4px;
+}

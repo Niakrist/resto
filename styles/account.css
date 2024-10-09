@@ -1,0 +1,41 @@
+.account {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+}
+
+.account__btn {
+  max-height: 48px;
+  max-width: 56px;
+  padding: 12px 16px;
+
+  border: 2px solid var(--font-accent-color);
+  border-radius: 16px;
+  font-size: 0px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account__btn--login {
+  background-color: transparent;
+  color: var(--font-accent-color);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.account__btn--login:hover {
+  background-color: var(--font-accent-color);
+  color: var(--font-white-color);
+}
+
+.account__btn--basket {
+  background-color: var(--font-accent-color);
+  color: var(--font-white-color);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.account__btn--basket:hover {
+  background-color: transparent;
+  color: var(--font-accent-color);
+}
