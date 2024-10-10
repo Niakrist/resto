@@ -58,3 +58,74 @@
   align-items: center;
   column-gap: 64px;
 }
+
+.main-menu__list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.main-menu__link {
+  display: inline-block;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-standart);
+  line-height: var(--line-height-big);
+  color: var(--font-primary-color);
+}
+
+.main-menu__link:focus-visible {
+  border-radius: 4px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact__phone {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-accent);
+  line-height: var(--line-height-standart);
+  color: var(--font-primary-color);
+  letter-spacing: 0.1px;
+}
+
+.contact__phone:focus-visible {
+  border-radius: 4px;
+}
+
+.contact__time {
+  font-weight: var(--font-weight-standart);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-standart);
+  color: var(--font-primary-color);
+}
+
+.account {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+}
+
+.account__btn {
+  max-height: 48px;
+  max-width: 56px;
+  padding: 12px 16px;
+
+  border: 2px solid var(--font-accent-color);
+  border-radius: 16px;
+  font-size: 0px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account__btn--login {
+  background-color: transparent;
+}
+
+.account__btn--basket {
+  background-color: var(--font-accent-color);
+}
