@@ -4,10 +4,14 @@
   --font-accent-color: #1c1c1c;
   --font-white-color: #fff;
   --font-grey-color: #727272;
+  --font-footer-color: #a6a6a6;
   --button-light-color: #f4f4f4;
+  --button-hover-color: #e8e8e8;
+  --font-hover-color: #393939;
   --badge-green-color: #1daa0f;
   --badge-orange-color: #fc7d04;
   --badge-blue-color: #0094e4;
+  --footer-border-color: #393939;
 
   /*font-size*/
   --font-size-small: 12px;

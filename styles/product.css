@@ -81,8 +81,15 @@
   font-size: var(--font-size-accent);
   line-height: var(--line-height-standart);
   color: var(--font-accent-color);
-  background: var(--button-light-color);
+  background-color: var(--button-light-color);
   border-radius: 16px;
+  transition: background-color 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.product__button:hover {
+  background-color: var(--button-hover-color);
+  color: var(--font-hover-color);
 }
 
 .product__button:disabled {
