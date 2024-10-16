@@ -5,8 +5,8 @@
 }
 
 .account__btn {
-  max-height: 48px;
-  max-width: 56px;
+  height: 48px;
+  width: 56px;
   padding: 12px 16px;
 
   border: 2px solid var(--font-accent-color);

@@ -52,8 +52,9 @@ a:focus-visible {
   outline: 2px solid var(--font-primary-color);
 }
 
-img {
-  max-width: 100%;
+img,
+svg {
+  width: 100%;
   display: block;
 }
 

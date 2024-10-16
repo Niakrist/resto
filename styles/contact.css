@@ -10,12 +10,16 @@
   line-height: var(--line-height-standart);
   color: var(--font-primary-color);
   letter-spacing: 0.1px;
+  transition: color 0.2s;
 }
 
 .contact__phone:focus-visible {
   border-radius: 4px;
 }
 
+.contact__phone:hover {
+  color: var(--font-accent-color);
+}
 .contact__time {
   font-weight: var(--font-weight-standart);
   font-size: var(--font-size-small);
@@ -29,7 +33,13 @@
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-menu);
   line-height: var(--line-height-standart);
+  transition: color 0.2s;
 }
+
+.contact__phone--footer:hover {
+  color: var(--font-footer-color);
+}
+
 .contact__time--footer {
   color: var(--font-footer-color);
   font-weight: var(--font-weight-standart);

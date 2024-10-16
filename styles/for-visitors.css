@@ -77,6 +77,8 @@
   font-size: var(--font-size-visitors-title);
   line-height: var(--line-height-visitors-title);
   color: var(--font-white-color);
+
+  text-wrap: balance;
 }
 .for-visitors__img {
   overflow: hidden;
